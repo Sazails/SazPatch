@@ -1,6 +1,10 @@
 ## SazPatch
 Create patches and use them!
 
+#### .exe links
+[SazPatchMaker.exe](https://github.com/Sazails/SazPatch/tree/master/SazPatchMaker/bin/Release/SazPatchMaker.exe)<br>
+[SazPatcher.exe](https://github.com/Sazails/SazPatch/tree/master/SazPatcher/bin/Release/SazPatcher.exe)
+
 ### The reason?
 I like to create projects and I like the idea of an updater, why download the full project files when you can have the option to install only the needed files for this update?
 
