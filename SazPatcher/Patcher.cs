@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace SazPatcher
 {
@@ -9,10 +10,8 @@ namespace SazPatcher
             string[] logCommands = File.ReadAllLines(Utils.patchFilePath);
             foreach (string command in logCommands)
             {
-                Utils.PrintLine(string.Format("Found: {0}", command));
-
+                Console.WriteLine("Found: {0}", command);
                 string path = command.Split(new char[] { '<', '>' })[1];
-
                 CopyFile(path);
             }
         }
@@ -26,15 +25,13 @@ namespace SazPatcher
             string fromPath = Path.Combine(Utils.patchPath, filePath);
             string toPath = Path.Combine(Directory.GetCurrentDirectory() + "\\", filePath);
 
-
             if (File.Exists(toPath))
                 File.Delete(toPath);
 
             if (File.Exists(fromPath))
             {
-                Utils.PrintLine(string.Format("Moving file from {0} to {1}", fromPath, toPath));
+                Console.WriteLine("Moving file from {0} to {1}", fromPath, toPath);
                 File.Move(fromPath, toPath);
-                Utils.PrintLine(string.Format("Finished moving file from {0} to {1}", fromPath, toPath));
             }
         }
     }

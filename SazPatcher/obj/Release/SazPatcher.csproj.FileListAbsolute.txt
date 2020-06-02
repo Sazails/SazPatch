@@ -1,0 +1,6 @@
+C:\Users\PC\Desktop\SazPatch\SazPatcher\bin\Release\SazPatcher.exe.config
+C:\Users\PC\Desktop\SazPatch\SazPatcher\bin\Release\SazPatcher.exe
+C:\Users\PC\Desktop\SazPatch\SazPatcher\bin\Release\SazPatcher.pdb
+C:\Users\PC\Desktop\SazPatch\SazPatcher\obj\Release\SazPatcher.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SazPatch\SazPatcher\obj\Release\SazPatcher.exe
+C:\Users\PC\Desktop\SazPatch\SazPatcher\obj\Release\SazPatcher.pdb

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -9,25 +10,15 @@ namespace SazPatchMaker
         public static void CreatePatch()
         {
             #region Get file paths
-            List<string> oldContentFullFilePaths = Directory.GetFiles(Program.oldContentPath, "*", SearchOption.AllDirectories).ToList();
-            List<string> newContentFullFilePaths = Directory.GetFiles(Program.newContentPath, "*", SearchOption.AllDirectories).ToList();
-
-            List<string> oldContentFilePaths = new List<string>();
-            List<string> newContentFilePaths = new List<string>();
-
+            List<string> oldContentFilePaths = Directory.GetFiles(Program.oldContentPath, "*", SearchOption.AllDirectories).ToList();
+            List<string> newContentFilePaths = Directory.GetFiles(Program.newContentPath, "*", SearchOption.AllDirectories).ToList();
             List<string> patchFilePaths = new List<string>();
 
-            foreach (string filePath in oldContentFullFilePaths)
-            {
-                oldContentFilePaths.Add(filePath.Replace(Program.oldContentPath, ""));
-            }
-            oldContentFullFilePaths = null;
+            for(int x = 0; x < oldContentFilePaths.Count; x++)
+                oldContentFilePaths[x] = oldContentFilePaths[x].Replace(Program.oldContentPath, "");
 
-            foreach (string filePath in newContentFullFilePaths)
-            {
-                newContentFilePaths.Add(filePath.Replace(Program.newContentPath, ""));
-            }
-            newContentFullFilePaths = null;
+            for (int x = 0; x < newContentFilePaths.Count; x++)
+                newContentFilePaths[x] = newContentFilePaths[x].Replace(Program.newContentPath, "");
             #endregion
 
             if (!Directory.Exists(Utils.patchPath))
@@ -54,7 +45,7 @@ namespace SazPatchMaker
                         {
                             patchFilePaths.Add(newFilePath);
                             CopyFile(newFilePath);
-                            Utils.PrintLine(string.Format("Logged '{0}' of type '{1}'", newFilePath, Logger.PatchType.UPDATE));
+                            Console.WriteLine("Logged '{0}' of type '{1}'", newFilePath, Logger.PatchType.UPDATE);
                             Logger.WriteFilePatch(writer, newFilePath, Logger.PatchType.UPDATE);
                         }
                     }

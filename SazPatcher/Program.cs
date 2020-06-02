@@ -8,24 +8,24 @@ namespace SazPatcher
     {
         static void Main()
         {
-            Utils.PrintLine("SazPatcher started.");
+            Console.WriteLine("SazPatcher started.");
 
             if (!Directory.Exists(Utils.patchPath))
             {
-                Utils.PrintLine(string.Format("No Patch folder in current directory: {0}", Directory.GetCurrentDirectory()));
+                Console.WriteLine(string.Format("No Patch folder in current directory: {0}", Directory.GetCurrentDirectory()));
                 Utils.ExitProgram(3000);
             }
 
             Patcher.Patch();
 
-            Utils.PrintLine("SazPatcher finished.");
-            Utils.PrintLine("Press any key to quit.");
+            Console.WriteLine("SazPatcher finished.");
+            Console.WriteLine("Press any key to quit.");
             Console.ReadKey();
         }
 
         static void ReloadProgram(int delay)
         {
-            Utils.PrintLine("Reloading");
+            Console.WriteLine("Reloading");
             Thread.Sleep(delay);
             Console.Clear();
             Main();
