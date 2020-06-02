@@ -12,7 +12,7 @@ namespace SazPatcher
 
             if (!Directory.Exists(Utils.patchPath))
             {
-                Console.WriteLine(string.Format("No Patch folder in current directory: {0}", Directory.GetCurrentDirectory()));
+                Console.WriteLine("No Patch folder in current directory: {0}", Directory.GetCurrentDirectory());
                 Utils.ExitProgram(3000);
             }
 

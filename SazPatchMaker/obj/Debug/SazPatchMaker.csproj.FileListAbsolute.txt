@@ -1,0 +1,11 @@
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\bin\Debug\SazPatchMaker.exe.config
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\bin\Debug\SazPatchMaker.exe.manifest
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\bin\Debug\SazPatchMaker.application
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\bin\Debug\SazPatchMaker.exe
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\bin\Debug\SazPatchMaker.pdb
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\obj\Debug\SazPatchMaker.csprojAssemblyReference.cache
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\obj\Debug\SazPatchMaker.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\obj\Debug\SazPatchMaker.exe.manifest
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\obj\Debug\SazPatchMaker.application
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\obj\Debug\SazPatchMaker.exe
+C:\Users\PC\Documents\Projects\GitHub\C#\SazPatch\SazPatchMaker\obj\Debug\SazPatchMaker.pdb
